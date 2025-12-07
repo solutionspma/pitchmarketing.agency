@@ -47,3 +47,6 @@ coverage/
 *.log
 *.pid
 *.seed
+
+# Local Netlify folder
+.netlify
