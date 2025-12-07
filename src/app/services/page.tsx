@@ -95,8 +95,9 @@ export default function ServicesPage() {
               </h2>
               <p className="text-gray-400 mb-6">
                 Professional video commercials, AI-generated avatars, voice
-                cloning with ElevenLabs, podcast production, and studio-quality
-                audio. We bring your vision to life.
+                cloning, podcast production, and studio-quality
+                audio. We bring your vision to life with our proprietary
+                production pipeline.
               </p>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-center gap-3">
@@ -198,7 +199,7 @@ export default function ServicesPage() {
               <p className="text-gray-400 mb-6">
                 Leverage the power of artificial intelligence with custom
                 chatbots, AI avatars, voice synthesis, image generation, and
-                automated workflows powered by OpenAI, Replicate, and RunPod.
+                automated workflows powered by our proprietary AI infrastructure.
               </p>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-center gap-3">

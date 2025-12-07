@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { supabase } from "@/lib/supabase";
+import { supabase, isSupabaseReady, isGenesisAccount } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -17,7 +17,13 @@ export default function LoginPage() {
     setError("");
     setLoading(true);
 
-    const { error } = await supabase.auth.signInWithPassword({
+    if (!isSupabaseReady() || !supabase) {
+      setError("Authentication service not configured. Please contact support.");
+      setLoading(false);
+      return;
+    }
+
+    const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
@@ -26,7 +32,12 @@ export default function LoginPage() {
       setError(error.message);
       setLoading(false);
     } else {
-      router.push("/dashboard");
+      // Check if genesis account for admin redirect
+      if (isGenesisAccount(data.user?.email)) {
+        router.push("/admin");
+      } else {
+        router.push("/dashboard");
+      }
     }
   }
 
