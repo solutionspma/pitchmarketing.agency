@@ -4,6 +4,8 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  NEXT_PUBLIC_SITE_NAME = "Pitch Marketing Agency"
+  NEXT_PUBLIC_COMPANY_NAME = "Pitch Market Strategies & Public Relations, LLC"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
@@ -15,8 +17,3 @@
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200

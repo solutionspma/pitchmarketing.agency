@@ -1,19 +1,30 @@
 # Pitch Marketing Agency - Multi-Tenant SaaS Platform
 
-This is the complete payment and management platform for Pitch Marketing Agency, including:
+The central hub for **Pitch Market Strategies & Public Relations, LLC** — powering the entire Pitch Modular Spaces universe.
+
+Every purchase across all Pitch brands flows through this platform:
+- **PitchMarketing.agency** - Full-service creative agency
+- **BeCovered.life** - Life insurance marketplace
+- **Level10 CRM** - Marketing automation platform
+- **SaxtaxPro** - Tax preparation software
+- **YOcreator** - AI content generation
+- **Mod Cellular** - Telecom services
+
+## 🌟 Platform Features
 
 - **Stripe Connect Marketplace** - Full payment processing with agent payouts
 - **Multi-Tenant Architecture** - Organizations with role-based access control
 - **Admin Dashboard** - Customer, subscription, invoice, and project management
 - **Print Shop** - Product catalog with Stripe integration
 - **Support System** - Real-time ticket management
+- **AI Services** - OpenAI, ElevenLabs, Replicate integration
+- **Commercial Production** - Video, audio, music production services
 
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
 
 ```bash
-cd pitch-pay
 npm install
 ```
 
@@ -140,11 +151,19 @@ Every table is scoped to organizations:
    - Set up branding for onboarding
 
 3. **Deploy to Production**
-   - Vercel recommended for Next.js
+   - Netlify recommended for Next.js
    - Update environment variables
    - Update NEXT_PUBLIC_URL
 
-## 📞 Support
+## 📞 Contact
 
-Built by Pitch Marketing Agency
+**Pitch Market Strategies & Public Relations, LLC**
+
+- 📧 General: helloworld@pitchmarketing.agency
+- 💼 Business: solutions@pitchmarketing.agency  
+- 🎧 Support: Client Dashboard → Support Tickets
+
+---
+
+*Build. Scale. Dominate.*
 Contact: support@pitchmarketing.agency
