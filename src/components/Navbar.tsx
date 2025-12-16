@@ -24,10 +24,10 @@ export default function Navbar() {
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-2xl"
+          className="md:hidden text-2xl text-white z-50"
           aria-label="Toggle menu"
         >
-          ☰
+          {open ? '✕' : '☰'}
         </button>
 
         <div
@@ -36,46 +36,60 @@ export default function Navbar() {
           } md:flex gap-6 p-4 md:p-0 items-center`}
         >
           <Link
+            href="/about"
+            onClick={() => setOpen(false)}
+            className="block py-2 md:py-0 hover:text-pitch-gold transition"
+          >
+            About
+          </Link>
+          <Link
             href="/services"
+            onClick={() => setOpen(false)}
             className="block py-2 md:py-0 hover:text-pitch-gold transition"
           >
             Services
           </Link>
           <Link
             href="/platforms"
+            onClick={() => setOpen(false)}
             className="block py-2 md:py-0 hover:text-pitch-gold transition"
           >
             Platforms
           </Link>
           <Link
             href="/print"
+            onClick={() => setOpen(false)}
             className="block py-2 md:py-0 hover:text-pitch-gold transition"
           >
             Print Shop
           </Link>
           <Link
             href="/pricing"
+            onClick={() => setOpen(false)}
             className="block py-2 md:py-0 hover:text-pitch-gold transition"
           >
             Pricing
           </Link>
           <Link
             href="/contact"
+            onClick={() => setOpen(false)}
             className="block py-2 md:py-0 hover:text-pitch-gold transition"
           >
             Contact
           </Link>
           <Link
             href="/auth/login"
+            onClick={() => setOpen(false)}
             className="block py-2 md:py-0 hover:text-pitch-gold transition"
           >
             Login
           </Link>
           <Link
-            href="/auth/register"
+            href="/book"
+            onClick={() => setOpen(false)}
             className="block py-2 md:py-0 px-4 bg-pitch-gold text-black rounded-lg font-semibold hover:bg-yellow-400 transition"
           >
-            Get Started
+            Book a Call
           </Link>
         </div>
       </div>

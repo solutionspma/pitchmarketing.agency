@@ -13,7 +13,10 @@ module.exports = {
           black: '#0A0A0A',
           dark: '#1A1A1A',
           gray: '#2A2A2A',
-        }
+        },
+        queenPink: '#ff6db1',
+        goldAccent: '#f9c74f',
+        deepPurple: '#7b2cbf',
       },
     },
   },

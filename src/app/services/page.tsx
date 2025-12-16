@@ -75,7 +75,7 @@ export default function ServicesPage() {
                 href="/pricing"
                 className="inline-block mt-8 px-6 py-3 bg-pitch-gold text-black font-semibold rounded-lg hover:bg-yellow-400 transition"
               >
-                Get Quote
+                Book a Consultation
               </Link>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function ServicesPage() {
                 href="/pricing"
                 className="inline-block mt-8 px-6 py-3 bg-pitch-gold text-black font-semibold rounded-lg hover:bg-yellow-400 transition"
               >
-                Get Quote
+                Book a Consultation
               </Link>
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden order-1 md:order-2">
@@ -178,7 +178,7 @@ export default function ServicesPage() {
                 href="/pricing"
                 className="inline-block mt-8 px-6 py-3 bg-pitch-gold text-black font-semibold rounded-lg hover:bg-yellow-400 transition"
               >
-                Get Quote
+                Book a Consultation
               </Link>
             </div>
           </div>
@@ -221,7 +221,7 @@ export default function ServicesPage() {
                 href="/pricing"
                 className="inline-block mt-8 px-6 py-3 bg-pitch-gold text-black font-semibold rounded-lg hover:bg-yellow-400 transition"
               >
-                Get Quote
+                Book a Consultation
               </Link>
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden order-1 md:order-2">
@@ -281,7 +281,7 @@ export default function ServicesPage() {
                 href="/pricing"
                 className="inline-block mt-8 px-6 py-3 bg-pitch-gold text-black font-semibold rounded-lg hover:bg-yellow-400 transition"
               >
-                Get Quote
+                Book a Consultation
               </Link>
             </div>
           </div>
@@ -383,7 +383,7 @@ export default function ServicesPage() {
                 href="/pricing"
                 className="inline-block mt-8 px-6 py-3 bg-pitch-gold text-black font-semibold rounded-lg hover:bg-yellow-400 transition"
               >
-                Get Quote
+                Book a Consultation
               </Link>
             </div>
           </div>

@@ -105,7 +105,12 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <Link href="/about" className="hover:text-pitch-gold">
-                  About Us
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/book" className="hover:text-pitch-gold">
+                  Book a Call
                 </Link>
               </li>
               <li>

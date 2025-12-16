@@ -1,8 +1,22 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="text-center py-32 px-6 bg-gradient-to-b from-black to-pitch-dark">
+    <section className="relative text-center py-32 px-6 bg-gradient-to-b from-black to-pitch-dark overflow-hidden">
+      {/* Background Image Overlay */}
+      <div className="absolute inset-0 z-0 opacity-20">
+        <Image
+          src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Creative marketing and branding"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-pitch-dark/80 to-pitch-dark"></div>
+      </div>
+
+      <div className="relative z-10">
       <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-[1.1]">
         BUILD. SCALE.
         <span className="text-pitch-gold"> DOMINATE.</span>
@@ -16,10 +30,10 @@ export default function Hero() {
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Link
-          href="/pricing"
+          href="/book"
           className="px-8 py-4 bg-pitch-gold text-black font-semibold rounded-lg hover:bg-yellow-400 transition"
         >
-          View Pricing
+          Book a Consultation
         </Link>
         <Link
           href="/services"
@@ -46,6 +60,7 @@ export default function Hero() {
           <p className="text-3xl font-bold text-pitch-gold">10+</p>
           <p className="text-gray-400 text-sm">Years Experience</p>
         </div>
+      </div>
       </div>
     </section>
   );

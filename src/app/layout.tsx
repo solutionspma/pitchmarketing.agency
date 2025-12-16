@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Pitch Marketing Agency | Build. Scale. Dominate.",
   description:
-    "Elite creative services, custom software, and powerful automation tools — all under one unified platform.",
+    "Elite creative services, custom software, and powerful automation tools — all under one unified platform. Modular Web Services by Pitch Marketing — flexible, scalable website builds that grow with your business.",
 };
 
 export default function RootLayout({
