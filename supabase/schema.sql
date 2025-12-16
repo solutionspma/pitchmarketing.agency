@@ -391,6 +391,69 @@ create policy "print_products_write" on print_products for all
   using (org_id in (select org_id from organization_members where user_id = auth.uid() and role in ('owner', 'admin')));
 
 -- ==============================================
+-- CRM: CLIENTS TABLE
+-- ==============================================
+create table if not exists clients (
+  id uuid primary key default gen_random_uuid(),
+  org_id uuid references organizations(id) on delete cascade,
+  email text not null,
+  name text,
+  phone text,
+  company text,
+  elite boolean default false,
+  sessions integer default 0,
+  stripe_customer_id text,
+  subscription jsonb,
+  metadata jsonb default '{}',
+  last_credit_assigned timestamptz,
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
+);
+
+create unique index if not exists idx_clients_email on clients(email);
+
+-- ==============================================
+-- CRM: BOOKINGS TABLE
+-- ==============================================
+create table if not exists bookings (
+  id uuid primary key default gen_random_uuid(),
+  org_id uuid references organizations(id) on delete cascade,
+  client_id uuid references clients(id),
+  name text not null,
+  email text not null,
+  phone text,
+  service text not null,
+  date date not null,
+  time time not null,
+  notes text,
+  status text default 'pending' check (status in ('pending', 'confirmed', 'cancelled', 'completed')),
+  cancellation_reason text,
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
+);
+
+-- RLS for clients
+alter table clients enable row level security;
+
+create policy "clients_read" on clients for select
+  using (org_id is null or org_id in (select get_user_org_ids()));
+
+create policy "clients_write" on clients for all
+  using (org_id is null or org_id in (select org_id from organization_members where user_id = auth.uid() and role in ('owner', 'admin', 'agent')));
+
+-- RLS for bookings
+alter table bookings enable row level security;
+
+create policy "bookings_read" on bookings for select
+  using (true);
+
+create policy "bookings_insert" on bookings for insert
+  with check (true);
+
+create policy "bookings_update" on bookings for update
+  using (org_id is null or org_id in (select org_id from organization_members where user_id = auth.uid() and role in ('owner', 'admin', 'agent')));
+
+-- ==============================================
 -- INDEXES FOR PERFORMANCE
 -- ==============================================
 create index if not exists idx_customers_org on customers(org_id);
@@ -404,6 +467,9 @@ create index if not exists idx_tickets_org on tickets(org_id);
 create index if not exists idx_tickets_status on tickets(status);
 create index if not exists idx_print_products_org on print_products(org_id);
 create index if not exists idx_print_products_category on print_products(category);
+create index if not exists idx_bookings_date on bookings(date);
+create index if not exists idx_bookings_status on bookings(status);
+create index if not exists idx_clients_org on clients(org_id);
 
 -- ==============================================
 -- ENABLE REALTIME FOR SUPPORT TICKETS
