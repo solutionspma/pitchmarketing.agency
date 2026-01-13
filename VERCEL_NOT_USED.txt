@@ -1,0 +1,1 @@
+This repository is deployed on Netlify, not Vercel. Please go to vercel.com/dashboard to disconnect this repo from Vercel.
