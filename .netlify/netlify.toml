@@ -1,0 +1,30 @@
+plugins = []
+functionsDirectory = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/netlify/functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/current"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "npm run build"
+functions = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/netlify/functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
