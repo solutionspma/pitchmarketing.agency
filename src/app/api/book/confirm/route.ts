@@ -98,7 +98,7 @@ export async function POST(request: Request) {
 }
 
 function generateEmailHTML(booking: any) {
-  return \`
+  return `
     <!DOCTYPE html>
     <html>
     <head>
@@ -117,21 +117,21 @@ function generateEmailHTML(booking: any) {
           <h1>✅ Booking Confirmed</h1>
         </div>
         <div class="content">
-          <p>Hi \${booking.name},</p>
+          <p>Hi ${booking.name},</p>
           <p>Your meeting has been scheduled. Here are the details:</p>
           <div class="details">
-            <p><strong>Service:</strong> \${booking.service}</p>
-            <p><strong>Date:</strong> \${booking.date}</p>
-            <p><strong>Time:</strong> \${booking.time}</p>
+            <p><strong>Service:</strong> ${booking.service}</p>
+            <p><strong>Date:</strong> ${booking.date}</p>
+            <p><strong>Time:</strong> ${booking.time}</p>
           </div>
           <p>We'll send you a reminder before your appointment.</p>
           <p>Best regards,<br>Pitch Marketing Team</p>
         </div>
         <div class="footer">
-          <p>© \${new Date().getFullYear()} Pitch Marketing Agency</p>
+          <p>© ${new Date().getFullYear()} Pitch Marketing Agency</p>
         </div>
       </div>
     </body>
     </html>
-  \`;
+  `;
 }
