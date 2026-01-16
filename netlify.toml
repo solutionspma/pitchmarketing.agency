@@ -1,7 +1,6 @@
 [build]
-  base = "pitchmarketing-agency-app"
   command = "npm run build"
-  publish = "pitchmarketing-agency-app/.next"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "18"
