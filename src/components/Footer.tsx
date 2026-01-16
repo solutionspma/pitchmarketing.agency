@@ -73,7 +73,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://payflex.systems" target="_blank" rel="noopener noreferrer" className="hover:text-pitch-gold">
+                <a href="https://payflexsystems.com" target="_blank" rel="noopener noreferrer" className="hover:text-pitch-gold">
                   PayFlex Systems
                 </a>
               </li>
