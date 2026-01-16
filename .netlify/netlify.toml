@@ -1,21 +1,28 @@
-plugins = []
-functionsDirectory = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/netlify/functions"
-functionsDirectoryOrigin = "config-v1"
-headers = []
+headersOrigin = "config"
 redirects = []
 
 [functions]
 
 [functions."*"]
 
+[[plugins]]
+origin = "config"
+package = "@netlify/plugin-nextjs"
+
+[plugins.inputs]
+
 [build]
-publish = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/current"
+publish = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/pitchmarketing-agency-app/.next"
 publishOrigin = "config"
 commandOrigin = "config"
 command = "npm run build"
-functions = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/netlify/functions"
+base = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/pitchmarketing-agency-app"
 
 [build.environment]
+NODE_VERSION = "18"
+NEXT_PUBLIC_SITE_NAME = "Pitch Marketing Agency"
+NEXT_PUBLIC_COMPANY_NAME = "Pitch Market Strategies & Public Relations, LLC"
+NEXT_PUBLIC_URL = "https://pitchmarketing.agency"
 
 [build.processing]
 
@@ -28,3 +35,12 @@ functions = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pi
 [build.processing.js]
 
 [build.services]
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+X-XSS-Protection = "1; mode=block"
+Referrer-Policy = "strict-origin-when-cross-origin"
