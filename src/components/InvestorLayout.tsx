@@ -24,10 +24,10 @@ export default function InvestorLayout({
             </span>
             <div className="flex flex-col leading-tight">
               <span className="text-sm font-semibold">
-                Pitch Market Strategies
+                Pitch Market Strategies &amp;
               </span>
               <span className="text-[11px] text-slate-400">
-                &amp; Public Relations, LLC
+                Public Relations, LLC
               </span>
             </div>
           </Link>

@@ -69,7 +69,7 @@ export default function LegalPage() {
           During onboarding, you will be provided with:
         </p>
         <ul className="mb-3 list-disc space-y-1 pl-5">
-          <li>Master Hybrid Investment Agreement (Pitch Market Strategies)</li>
+          <li>Master Hybrid Investment Agreement (Pitch Market Strategies & Public Relations, LLC)</li>
           <li>
             Product-specific Business Unit Appendices for the areas you choose
             to back

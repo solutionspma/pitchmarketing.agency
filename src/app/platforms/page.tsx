@@ -120,7 +120,7 @@ export default function PlatformsPage() {
             Our <span className="text-pitch-gold">SaaS Platforms</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Powerful software solutions built by Pitch Market Strategies. Each
+            Powerful software solutions built by Pitch Marketing Agency. Each
             platform is designed to solve real business problems and scale with
             your growth.
           </p>

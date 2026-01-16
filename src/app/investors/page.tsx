@@ -18,12 +18,12 @@ export default function InvestorsPage() {
   return (
     <InvestorLayout
       title="Invest in a multi-product, modular ecosystem."
-      subtitle="Pitch Market Strategies owns a growing portfolio of telecom, fintech, media, and SaaS products. Investors participate in revenue now and equity upside later through a hybrid 2× / 3× model."
+      subtitle="Pitch Market Strategies & Public Relations, LLC owns a growing portfolio of telecom, fintech, media, and SaaS products. Investors participate in revenue now and equity upside later through a hybrid 2× / 3× model."
     >
       <PageSection title="How the hybrid model works" kicker="Investment Model">
         <ul className="list-disc space-y-2 pl-5">
           <li>
-            <span className="font-semibold">You invest in Pitch Market Strategies, LLC</span> – the parent company that owns 30+ products and brands.
+            <span className="font-semibold">You invest in Pitch Market Strategies & Public Relations, LLC</span> – the parent company that owns 30+ products and brands.
           </li>
           <li>
             Your capital is <span className="font-semibold">allocated to one or more Business Units</span> (ModPDF, Level10, ModCellular, YouCast, etc.).

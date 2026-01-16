@@ -6,12 +6,12 @@ import Link from "next/link";
 export default function WhyInvestPage() {
   return (
     <InvestorLayout
-      title="Why invest in Pitch Market Strategies?"
+      title="Why invest in Pitch Market Strategies & Public Relations, LLC?"
       subtitle="Because you're not betting on a single app. You're backing an operator with a modular engine that can keep launching and iterating."
     >
       <PageSection title="A modular, multi-vertical portfolio" kicker="Thesis">
         <p className="mb-3">
-          Pitch Market Strategies is a holding company and studio that builds
+          Pitch Market Strategies & Public Relations, LLC is a holding company and studio that builds
           and operates products across:
         </p>
         <ul className="mb-3 list-disc space-y-1 pl-5">
