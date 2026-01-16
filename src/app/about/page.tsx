@@ -2,14 +2,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-pitch-black text-white">
-      <Navbar />
-
       {/* Hero Section */}
       <section className="pt-24 pb-12 px-6">
         <div className="max-w-6xl mx-auto">
@@ -217,8 +213,6 @@ export default function AboutPage() {
           </Link>
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 }

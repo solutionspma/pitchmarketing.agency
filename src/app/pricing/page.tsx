@@ -3,8 +3,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 const RETAINER_PACKAGES = [
   {
@@ -277,8 +275,6 @@ export default function PricingPage() {
         />
       </div>
       
-      <Navbar />
-
       <div className="pt-32 pb-20 px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
@@ -637,8 +633,6 @@ export default function PricingPage() {
           </section>
         </div>
       </div>
-
-      <Footer />
     </main>
   );
 }

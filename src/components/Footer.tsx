@@ -68,33 +68,33 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-pitch-gold">Platforms</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link href="/platforms" className="hover:text-pitch-gold">
-                  Level10 CRM
-                </Link>
+                <a href="https://level10.financial" target="_blank" rel="noopener noreferrer" className="hover:text-pitch-gold">
+                  Level10 Financial
+                </a>
+              </li>
+              <li>
+                <a href="https://payflex.systems" target="_blank" rel="noopener noreferrer" className="hover:text-pitch-gold">
+                  PayFlex Systems
+                </a>
+              </li>
+              <li>
+                <a href="https://sebi.market" target="_blank" rel="noopener noreferrer" className="hover:text-pitch-gold">
+                  SEBI Markets
+                </a>
+              </li>
+              <li>
+                <a href="https://youcast.network" target="_blank" rel="noopener noreferrer" className="hover:text-pitch-gold">
+                  YouCast Network
+                </a>
+              </li>
+              <li>
+                <a href="https://godrive.academy" target="_blank" rel="noopener noreferrer" className="hover:text-pitch-gold">
+                  GoDrive Academy
+                </a>
               </li>
               <li>
                 <Link href="/platforms" className="hover:text-pitch-gold">
-                  BeCovered.life
-                </Link>
-              </li>
-              <li>
-                <Link href="/platforms" className="hover:text-pitch-gold">
-                  SaxtaxPro
-                </Link>
-              </li>
-              <li>
-                <Link href="/platforms" className="hover:text-pitch-gold">
-                  Pitch Modular OS
-                </Link>
-              </li>
-              <li>
-                <Link href="/platforms" className="hover:text-pitch-gold">
-                  YOcreator
-                </Link>
-              </li>
-              <li>
-                <Link href="/platforms" className="hover:text-pitch-gold">
-                  Mod Cellular
+                  View All Platforms →
                 </Link>
               </li>
             </ul>
@@ -106,6 +106,11 @@ export default function Footer() {
               <li>
                 <Link href="/about" className="hover:text-pitch-gold">
                   About
+                </Link>
+              </li>
+              <li>
+                <Link href="/investors" className="hover:text-pitch-gold">
+                  Investors
                 </Link>
               </li>
               <li>

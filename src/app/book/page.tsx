@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -110,7 +108,6 @@ export default function BookPage() {
   if (submitted) {
     return (
       <main className="min-h-screen bg-pitch-black text-white">
-        <Navbar />
         <div className="pt-32 pb-20 px-6">
           <div className="max-w-xl mx-auto text-center">
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-green-500/10 border border-green-500/20 flex items-center justify-center">
@@ -153,15 +150,12 @@ export default function BookPage() {
             </a>
           </div>
         </div>
-        <Footer />
       </main>
     );
   }
 
   return (
     <main className="min-h-screen bg-pitch-black text-white">
-      <Navbar />
-
       <div className="pt-28 pb-20 px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -425,8 +419,6 @@ export default function BookPage() {
           )}
         </div>
       </div>
-
-      <Footer />
     </main>
   );
 }
