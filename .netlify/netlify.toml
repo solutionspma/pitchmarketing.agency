@@ -12,11 +12,10 @@ package = "@netlify/plugin-nextjs"
 [plugins.inputs]
 
 [build]
-publish = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/pitchmarketing-agency-app/.next"
+publish = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/.next"
 publishOrigin = "config"
 commandOrigin = "config"
 command = "npm run build"
-base = "/Users/cffsmacmini/Documents/pitchmarketingagency.code-workspace/pitchmarketing.agency/pitchmarketing-agency-app"
 
 [build.environment]
 NODE_VERSION = "18"
