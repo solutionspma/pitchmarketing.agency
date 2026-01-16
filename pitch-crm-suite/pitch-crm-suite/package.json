@@ -1,0 +1,27 @@
+{
+  "name": "pitch-crm-suite",
+  "version": "1.0.0",
+  "description": "Pitch Marketing CRM Suite - Client management, booking, and billing",
+  "type": "module",
+  "main": "crm/index.js",
+  "scripts": {
+    "start": "node crm/index.js",
+    "dev": "node --watch crm/index.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "@supabase/supabase-js": "^2.39.0",
+    "nanoid": "^5.0.4",
+    "openai": "^4.24.0",
+    "stripe": "^14.10.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Pitch Marketing Agency",
+  "license": "MIT"
+}
